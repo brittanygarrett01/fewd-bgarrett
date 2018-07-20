@@ -8,42 +8,42 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live Music Lou</title>
 	<link rel="stylesheet" href="CSS/normalize.css">
-	<link rel="stylesheet" href="CSS/bootstrap.min.css">
+	<link rel="stylesheet" href="CSS/bootstrap.css">
 	<link rel="stylesheet" href="CSS/main.css">
 </head>
 	
 <body>
 	
 <!-- ----------------------- Header ------------------------------ -->
-<!--
-	<header class="main-header">
-		
-	</header>
--->
-
-	<div class="banner">
+	<header>
+        <a href="index.html"><img class="logo" src="IMG/logo1.png" alt="Live Music Lou logo"></a>
+    </header>
+    
+    <div class="banner">
 		<div class="banner-name">
-			<a href="index.html"><img class="logo" src="IMG/logo1.png" alt="Live Music Lou logo"></a>
 			<h1 class="main-name">live music louisville</h1>
 			<a href="#"><button class="cta">subscribe to our blog</button></a>
-		</div>
+		</div> <!-- logo and name end ----------->
 		<div class="banner-nav">
 			<a href="#">About</a>
 			<a href="#">Listen</a>
 			<a href="#">Read</a>
 			<a href="#">View</a>
 			<a href="#">Contact</a>
-		</div>
+		</div> <!-- nav end ----------->
 	</div> <!-- banner end ----------->
 	
 	<div class="container">
-		<div class="row">
-			<div class="item about col-lg">
+		<div class="row main-content">
+
+<!-- Short about section - to link to actual page   -->
+            <div class="item about col-lg">
 				<h2>Who is LML?</h2>
 				<p class="about-text">We are just a couple of ladies who care about education, are best friends, and enjoy the music culture around town. We try to get out as often as we can with our hectic schedules and live a little through these musicians. We started this just for us - to reminisce the shows - and are proud to now share a little bit with you.</p>
 				<a href="#"><button class="read-more">More...</button></a>
 			</div> <!-- about end ----------->
 
+<!-- To do in future: figure out embedding a Spotify player -->
 			<div class="item listen col-lg">
 				<h2>Listen</h2>
 				<img class ="main-page-img" src="IMG/cantmiss.jpg" alt="Photo of people at a concert">
@@ -54,6 +54,7 @@
 				</a>
 			</div> <!-- spotify end ----------->
 
+<!-- Will take you to the blog posts  -->
 			<div class="item read col-lg">
 				<h2>Read</h2>
 				<img class="main-page-img" src="IMG/reviews.jpg" alt="Photo of a microphone at a concert">
@@ -64,7 +65,8 @@
 				</a>
 			</div> <!-- reviews end ----------->
 		</div> <!-- main content row end ----------->
-			
+
+<!-- Should be a Flickr carousel that shows photos from LML photostream -->
 		<div class="row">
 			<div class="item view col-lg">
 				<h2>View</h2>
@@ -72,6 +74,7 @@
 				<p>We take some kickass photos. Don't believe us? Check out our Flickr feed and be jealous that you weren't there irl.</p>
 			</div> <!-- flickr end ----------->
 			
+<!-- This is a contact form to send a quick message  -->
 			<div class="item contact-cont col-lg">
 				<h2>Contact</h2>
 				<p>Want to be part of the Live Music Lou team? Have a question about some upcoming shows? Or maybe you just want to throw some compliments our way? We'd love to hear from you!</p>
@@ -98,12 +101,14 @@
 	
 
 
+<!-- To do in future: link to FB, IG, TW using icons    -->
 	<footer class="main-footer">
 		<span>connect with us on all of the socials.</span>
-	</footer>
+	</footer> <!-- footer end ----------->
 	
 
 	<script src="JS/jquery-3.3.1.min.js"></script>
+    <script src="JS/bootstrap.js"></script>
 	<script src="JS/app.js"></script>
 </body>
 </html>
