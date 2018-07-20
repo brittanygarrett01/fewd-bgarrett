@@ -1,0 +1,246 @@
+/* ================================= 
+  Styles for Elements
+==================================== */
+* {
+	box-sizing: border-box;
+}
+	
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	line-height: 1.4;
+	margin: 0;
+}
+
+h1 {
+	color: white;
+	letter-spacing: 3px;
+}
+
+h2 {
+	font-size: 2em;
+	display: block;
+	background: #009999;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+a:hover {
+	opacity: 0.7;
+}
+
+ul {
+	list-style: none;
+}
+
+.main-name {
+	font-size: 3.5em;
+}
+
+button {
+	border: none;
+}
+
+.cta {
+	padding: 10px 15px;
+	display: inline-block;
+	border-radius: 5px;
+	background: #009999;
+	color: white;
+	font-size: 0.9em;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+
+.read-more,
+.submit {
+	padding: 5px 15px;
+	display: inline-block;
+	border-radius: 5px;
+	background: #001933;
+	color: white;
+}
+
+/* ================================= 
+  Styles for Nav Bar
+==================================== */
+
+/*
+.main-header {
+	background: #001933;
+	text-align: center;
+	padding: 5px 25px;
+}
+*/
+
+/*
+.main-nav {
+	margin: 0;
+	text-align: center;
+	background: #001933;
+}
+*/
+
+.banner-nav a {
+	padding: 14px 20px;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	display: block;
+}
+
+
+/* ================================= 
+  Styles for Containers & Main Content
+==================================== */
+.banner {
+	background: #001933;
+	text-align: center;
+	padding: 100px 25px;
+}
+
+.logo {
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	background: white;
+	border-radius: 50%;
+	
+}
+
+.banner-nav {
+	padding-top: 25px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+
+.container {
+	margin: 10px auto;
+	padding: 15px;
+	padding-bottom: 25px;
+	display: flex;
+	flex-direction: column;
+}
+
+.item {
+	margin: 10px auto;
+	padding: 15px;
+	padding-bottom: 25px;
+}
+
+.about-text {
+	font-size: 1.2em;
+}
+
+.listen,
+.read {
+	position: relative;
+}
+
+.text-block {
+	position: absolute;
+	top: 120px;
+	left: 40px;
+	align-items: center;
+	background-color: #001933;
+	opacity: 0.7;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 80%;
+	border-radius: 5px;
+}
+
+.main-page-img {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+
+
+/* ================================= 
+  Styles for Contact Form
+==================================== */
+
+
+.contact-cont p {
+	width: 80%;
+}
+
+.contact {
+	margin: 0 auto;
+	padding: 1em;
+	background: #d3d3d3;
+	max-width: 500px;
+	border-radius: 5px;
+	border: none;
+}
+
+.contact div {
+	padding: 0.2em;
+}
+
+label {
+	display: inline-block;
+	width: 90px;
+	text-align: center;
+}
+
+input,
+textarea {
+	font: 1em sans-serif;
+	width: 300px;
+	border: 1px solid #999;
+	height: 2em;
+}
+
+input:focus,
+textarea:focus {
+	border-color: #000;
+}
+
+textarea {
+	vertical-align: top;
+	height: 5em;
+}
+
+.send {
+	text-align: center;
+}
+
+/* ================================= 
+  Styles for Footer
+==================================== */
+
+.main-footer {
+	background: #001933;
+	text-align: center;
+	padding: 15px;
+	color: white;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media screen and (min-width 900px) {
+	
+	.banner-nav {
+		text-align: left;
+		flex-direction: row !important;
+	}
+	
+	body {
+		background: red !important;
+	}
+	
+	
+}
+
+
+
+
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<!-- I am redesigning a music blog that I currently run with a friend. Focusing on the landing page for now and if things go well, could use this as a redesign. Not focusing on other pages as much. -->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Music Lou</title>
+	<link rel="stylesheet" href="CSS/normalize.css">
+	<link rel="stylesheet" href="CSS/bootstrap.min.css">
+	<link rel="stylesheet" href="CSS/main.css">
+</head>
+	
+<body>
+	
+<!-- ----------------------- Header ------------------------------ -->
+<!--
+	<header class="main-header">
+		
+	</header>
+-->
+
+	<div class="banner">
+		<div class="banner-name">
+			<a href="index.html"><img class="logo" src="IMG/logo1.png" alt="Live Music Lou logo"></a>
+			<h1 class="main-name">live music louisville</h1>
+			<a href="#"><button class="cta">subscribe to our blog</button></a>
+		</div>
+		<div class="banner-nav">
+			<a href="#">About</a>
+			<a href="#">Listen</a>
+			<a href="#">Read</a>
+			<a href="#">View</a>
+			<a href="#">Contact</a>
+		</div>
+	</div> <!-- banner end ----------->
+	
+	<div class="container">
+		<div class="row">
+			<div class="item about col-lg">
+				<h2>Who is LML?</h2>
+				<p class="about-text">We are just a couple of ladies who care about education, are best friends, and enjoy the music culture around town. We try to get out as often as we can with our hectic schedules and live a little through these musicians. We started this just for us - to reminisce the shows - and are proud to now share a little bit with you.</p>
+				<a href="#"><button class="read-more">More...</button></a>
+			</div> <!-- about end ----------->
+
+			<div class="item listen col-lg">
+				<h2>Listen</h2>
+				<img class ="main-page-img" src="IMG/cantmiss.jpg" alt="Photo of people at a concert">
+				<a href="#">
+					<div class="text-block">
+						<p>Check out this week's Can't Miss artists on our Spotify playlist. In the future, an embedded Spotify player would go here displaying the playlist</p>
+					</div>
+				</a>
+			</div> <!-- spotify end ----------->
+
+			<div class="item read col-lg">
+				<h2>Read</h2>
+				<img class="main-page-img" src="IMG/reviews.jpg" alt="Photo of a microphone at a concert">
+				<a href="#">
+					<div class="text-block">
+						<p>Relive our favorite shows with us - our reviews include people-watching commentary, perks about local venues, and an overall vibe from each concert</p>
+					</div>
+				</a>
+			</div> <!-- reviews end ----------->
+		</div> <!-- main content row end ----------->
+			
+		<div class="row">
+			<div class="item view col-lg">
+				<h2>View</h2>
+				<div id="flickr"></div>
+				<p>We take some kickass photos. Don't believe us? Check out our Flickr feed and be jealous that you weren't there irl.</p>
+			</div> <!-- flickr end ----------->
+			
+			<div class="item contact-cont col-lg">
+				<h2>Contact</h2>
+				<p>Want to be part of the Live Music Lou team? Have a question about some upcoming shows? Or maybe you just want to throw some compliments our way? We'd love to hear from you!</p>
+				<form class="contact" action="#" method="post">
+					<div>
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="user-name">
+					</div>
+					<div>
+						<label for="mail">E-mail:</label>
+						<input type="email" id="email" name="user-email">
+					</div>
+					<div>
+						<label for="comment">Comment:</label>
+						<textarea id="comment" name="user-comment"></textarea>
+					</div>
+					<div class="send">
+						<button class="submit" type="submit">Send</button>
+					</div>
+				</form>	
+			</div> <!-- contact end ----------->
+		</div> <!-- secondary content row end ----------->
+	</div> <!-- main content container end ----------->
+	
+
+
+	<footer class="main-footer">
+		<span>connect with us on all of the socials.</span>
+	</footer>
+	
+
+	<script src="JS/jquery-3.3.1.min.js"></script>
+	<script src="JS/app.js"></script>
+</body>
+</html>
+	
