@@ -33,24 +33,8 @@ ul {
 	list-style: none;
 }
 
-.main-name {
-	font-size: 3.5em;
-    padding-bottom: 15px;
-}
-
 button {
 	border: none;
-}
-
-.cta {
-	padding: 10px 15px;
-	display: inline-block;
-	border-radius: 5px;
-	background: #009999;
-	color: white;
-	font-size: 0.9em;
-	letter-spacing: 1.5px;
-	text-transform: uppercase;
 }
 
 .read-more,
@@ -84,18 +68,65 @@ header {
 	margin-right: auto;
 	background: white;
 	border-radius: 50%;
-	
 }
 
-.banner-nav {
-	padding-top: 25px;
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	justify-content: center;
+.main-name {
+	font-size: 3.5em;
+    padding-bottom: 15px;
 }
 
-.banner-nav a {
+.cta {
+	padding: 10px 15px;
+	display: inline-block;
+	border-radius: 5px;
+	background: #009999;
+	color: white;
+	font-size: 0.9em;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+
+.hamburger {
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 45px;
+    padding: 5px 15px 0px 15px;
+    color: #999;
+    border: 0;
+    font-size: 1.4em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 10000000000000;
+}
+
+.cross {
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 65px;
+    padding: 7px 15px 0px 15px;
+    color: #999;
+    border: 0;
+    font-size: 3em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 10000000000000;
+}
+
+.nav {
+    z-index: 100000;
+    width: 100%;
+    text-align: center;
+    background: #009999;
+    display: block;
+}
+
+.nav a {
 	padding: 14px 20px;
 	text-decoration: none;
 	color: white;
@@ -233,16 +264,15 @@ textarea {
   Media Queries
 ==================================== */
 
-@media (min-width: 768px) {
-	
-	.banner-nav {
-		text-align: center;
-		flex-direction: row;
-	}
 
-}
+/* Tablet screens: nav menu transitions from vertical to horizontal layout, content breaks into 3 rows - about section is top row, listen/read split columns for 2nd row, and view/contact split columns for 3rd row */
 
 @media (min-width: 992px) {
+    
+    .nav,
+    .nav a {
+		display: inline-block;
+	}
     
     .main-content {
         flex-wrap: wrap;
@@ -262,6 +292,8 @@ textarea {
     }
   
 }
+
+/* Desktop/large screens: content breaks into 2 rows and about section re-orders to the middle. First row is listen/about/read and second row is view/contact */
 
 @media (min-width: 1200px) {
     

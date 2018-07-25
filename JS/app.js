@@ -1,3 +1,25 @@
+// The code below is to show/hide the hamburger menu 
+
+$(document).ready(function() {
+    $(".cross").hide();
+    $(".nav").hide();
+    $(".hamburger").click(function() {
+        $(".nav").slideToggle("fast", function() {
+            $(".hamburger").hide();
+            $(".cross").show();
+        });
+    });
+    
+    $(".cross").click(function() {
+        $(".nav").slideToggle("fast", function() {
+            $(".cross").hide();
+            $(".hamburger").show();
+        });
+    });
+})
+
+
+
 //Devan helped me with this section - I am fetching photos from Flickr, from my own personal Flickr feed, and displaying it as a slidehow on my homepage
 
 function loadPictures(){
