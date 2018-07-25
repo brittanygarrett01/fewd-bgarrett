@@ -153,11 +153,24 @@ header {
 	border-radius: 5px;
 }
 
+.viewer {
+    position: relative;
+    overflow: hidden;
+    padding-top: 66%;
+}
+
+.flickr-viewer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 100%;
+    border: 0; 
+}
 
 /* ================================= 
   Styles for Contact Form
 ==================================== */
-
 
 .contact-cont p {
 	width: 80%;
@@ -242,7 +255,9 @@ textarea {
     }
     
     .listen,
-    .read {
+    .read,
+    .view,
+    .contact-cont {
         min-width: 450px;
     }
   

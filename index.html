@@ -70,8 +70,11 @@
 		<div class="row">
 			<div class="item view col-lg">
 				<h2>View</h2>
-				<div id="flickr"></div>
-				<p>We take some kickass photos. Don't believe us? Check out our Flickr feed and be jealous that you weren't there irl.</p>
+                <p class="flickr-text">We take some kickass photos. Don't believe us? Check out our Flickr feed and be jealous that you weren't there irl.</p>
+                <div class="viewer">
+                    <!--  Using an iframe to import the flickr gallery. Devan helped me with this part (:  -->
+                    <iframe class="flickr-viewer" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=www.flickr.com/photos/livemusiclou/&sort=0&by=user&theme=default&scale=fill&limit=100&skin=default&autoplay=true" scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"><script>loadPictures();</script></iframe>
+				</div> <!-- viewer end ----------->
 			</div> <!-- flickr end ----------->
 			
 <!-- This is a contact form to send a quick message  -->
